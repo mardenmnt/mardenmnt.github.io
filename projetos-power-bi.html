@@ -31,7 +31,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Marden Coelho</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile2.jpg" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,12 +40,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experiências</a>
+            <a class="nav-link js-scroll-trigger" href="index.html">Currículo</a>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Aprendizados</a>
           </li>
           <li class="nav-item">
@@ -55,22 +55,106 @@
             <a class="nav-link js-scroll-trigger" href="#interests">Habilidades Comportamentais</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Certificações</a>
-          </li>          
-          <!--<li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfólio</a>
-          </li>-->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Certificações</a>
+          </li> -->
         </ul>
       </div>
     </nav>
 
     <div class="container-fluid p-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio">
         <div class="my-auto">
+          <h2 class="mb-5">Marden Coelho - Portfólio</h2>
 
           <h2 class="mb-5">Projetos Power BI</h2>
           
+          <section class="resume-section p-3 p-lg-5 d-flex flex-column">
+            <div class="my-auto">  
+            <h3 class="mb-0" style="text-align: left;">Spotify</h3><br>
+              <table>
+                <tr>
+                  <div style="font-size: 15px;">
+                    Esse projeto desenvolvi através de uma integração via API com o Spotify, importei os dados e tratei o que foi necessário.<br><br>
+                    Observações gerais:<br>
+                    <b>1)</b> A análise foi feita baseada na última semana e ela ficará atualizando conforme o tempo, não fiz com toda base existente do Spotify, porque meu note poderia pegar fogo com milhões de milhões de linhas. 😅<br>
+                    <b>2)</b> Os códigos podem ser clicado ou escaneados pelo app do Spotify e você terá acesso às musicas e também aos artistas.<br>
+                    <b>3)</b> Cores: verde claro (músicas), verde escuro (artistas)<br><br>
+
+                    ➡️ VISÃO: GERAL<br>
+                    🔶 Características gerais: Contagem de músicas, países, artistas e álbuns<br>
+                    🔶 Qtd músicas na última semana: Gráfico de linhas que mostra através da semana a quantidade de músicas identificadas no período.<br>
+                    🔶 Músicas explícitas: Análise em gráfico de barras sobre a quantidade de músicas explícitas em relação as demais. E é nítido que comporta mais da metade das demais.<br>
+                    🔶 Tabelas de Rank: No Spotify tem rank dos artistas, eu somei as notas de cada um nos países, gerando um total e fazendo comparativo a nível Global e Brasil.<br><br>
+
+                    ➡️ VISÃO: Análise músicas<br>
+                    🔶 Músicas populares: Fiz uma soma das notas de cada música e organizei em um gráfico de barras para ter o TOP 10.<br>
+                    🔶 Rank diário e Semanal: No Spotify tem um rank que pode ser diário ou semanal, informando o quanto a música ou artista ficou em determinada posição.<br>
+                    🔶 Qtd músicas mensal: Gráfico de linhas que mostra a quantidade de músicas mensal, conseguimos assim tirar insights valiosos.<br><br>
+
+                    ➡️ VISÃO: Análise artistas<br>
+                    🔶 Qtd álbuns / artista: Em gráfico de barras organizei (a nível global) os artistas com mais álbuns identificados.<br>
+                    🔶 Rank diário e Semanal: No Spotify tem um rank que pode ser diário ou semanal, informando o quanto a música ou artista fica em determinada posição.<br>
+                    🔶 Artistas mais populares: A nível global organizei os artistas mais populares, através das notas que eles receberam no período.<br>
+                    🔶 Variação semanal: Um artista e música tem variação de suas posições, com isso criei um gráfico para saber os que flutuam mais e comparar depois com os populares e ter ideia se eles tem alguma relação ou não.<br><br>
+
+                    ➡️ VISÃO: Variação artistas<br>
+                    🔶 Variação rank Global, EUA e Brasil: Reuni todos artistas que mais tem flutuação separando por Global, EUA e Brasil fazendo comparação em relação ao total de cada localidade para ter percentual.<br><br>
+
+                    ➡️ VISÃO: Popularidade músicas<br>
+                    🔶 Popularidade Global, EUA e Brasil: Reuni todas músicas que mais tem popularidade separando por Global, EUA e Brasil.<br>
+                    🔶 Mapa: A base tem muitos países e como muitos não seriam relevantes para a análise, coloquei esse mapa para mostrar os países envolvidos nessa base de dados.<br><br>
+                    
+                </div>
+                  <td><iframe title="spotify" width="1000" height="473.5" src="https://app.powerbi.com/view?r=eyJrIjoiNGVjOTM0NDQtZjA0ZC00MzJhLTk2ZDMtNjEzOWM1MjRlZjg3IiwidCI6ImEyYTE1ZTA1LWY2MjYtNDVhZi05MTkyLThlNDM2OTk2MjljZiJ9&pageName=ReportSection6b546ca5608ca909b6dd" frameborder="0" allowFullScreen="true"></iframe></td>
+                </tr>
+              </table>
+            </div>
+          </section>
+
+          <section class="resume-section p-3 p-lg-5 d-flex flex-column">
+            <div class="my-auto">  
+            <h3 class="mb-0" style="text-align: left;">Engenex Solutions</h3><br>
+              <table>
+                <tr>
+                  <div style="font-size: 15px;">
+                    Esse é uma projeto desenvolvido para construções em geral, ele tem três páginas principais. Características, Financeiro e Gantt, o painel está destinado a projetos de engenharia para acompanhar como está a evolução de cada etapa.<br><br> 
+                    
+                    ➡️ VISÃO: GERAL<br>
+                    
+                    🔶 Características gerais: tipo da obra, altura de cada construção, quantidade de andares, quantidade de elevadores.
+                    <br>
+                    🔶 Planejado x Realizado: Gráfico de colunas com um comparativo entre custo realizado e custo planejado, podendo analisar como está sendo investido o valor aplicado e se está de acordo com o que foi planejado, caso não esteja conseguimos verificar e reverter para não ser tão discrepante do custo planejado.
+                    <br>
+                    🔶 Curva S: Graficamente a curva S representa o acúmulo das distribuições de determinado fator da produção como: mão de obra, equipamentos e materiais. Temos um comparativo geral dos custos planejado, realizado e o total acumulado de cada um deles podendo verificar a distância entre os acúmulos e identificar uma situação negativa, podendo reverter antes que se concretize ou perdure por muito tempo.
+                    <br><br>
+                    
+                    ➡️ VISÃO: Financeiro<br>
+                    
+                    🔶 Características financeiras: tipo da obra, orçamento total para a obra e total realizado.
+                    <br>
+                    🔶 Indicador KPI: são os Indicadores-Chave de Desempenho observados por um negócio. São valores quantitativos fundamentais que medem os seus principais processos internos. Nesse caso é um comparativo entre o custo planejado e o realizado, tendo como objetivo o custo planejado, caso fique acima disso será algo negativa (teve custo acima do esperado), se ficar abaixo será positivo (teve custo abaixo do esperado) e também informa a porcentagem de diferença.
+                    <br>
+                    🔶 Etapas realizadas: conseguimos ver as etapas da obra e os respectivos custos, podendo assim verificar onde teve maior custo e se teve tal necessidade ou poderia ter diminuido e investido em outra etapa.
+                    <br>
+                    🔶 Etapas detalhamento: verificamos cada etapa com o total planejado, realizado e se a porcentagem de custo realizado em relação ao planejado ficou acima (ruim) ou abaixo (bom), outro mmodo para verificar se os custos estão acima do esperado e onde exatamente teve maior custo ou menor.
+                    <br>
+                    🔶 Localização: um mapa navegável que ilustra onde a construção está localizada.
+                    <br><br>
+                    
+                    ➡️ VISÃO: Gantt<br>
+                    
+                    🔶 Gantt: O diagrama de Gantt é uma representação gráfica do progresso de um projeto, similar às metodologias Kanban e Scrum. Ele destaca a priorização das tarefas e permite identificar a duração de cada etapa, ajudando a controlar o tempo e evitar custos adicionais.<br><br>
+                    
+                </div>
+                  <td><iframe title="bem coberto" width="1000" height="473.5" src="https://app.powerbi.com/view?r=eyJrIjoiYjFjMzEzZjktYmRjNC00ZWY4LWFjMzItNzNlYzkwODNiN2RiIiwidCI6ImEyYTE1ZTA1LWY2MjYtNDVhZi05MTkyLThlNDM2OTk2MjljZiJ9&pageName=ReportSection85b51dda1b1be5f5612e" frameborder="0" allowFullScreen="true"></iframe></td>
+                </tr>
+              </table>
+            </div>
+          </section>
 
           <section class="resume-section p-3 p-lg-5 d-flex flex-column">
             <div class="my-auto">            
