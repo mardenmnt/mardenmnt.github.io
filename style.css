@@ -1033,3 +1033,131 @@ body {
     color: var(--text-2);
     font-size: 0.85rem;
 }
+
+/* =========================================
+   📱 RESPONSIVIDADE (MOBILE & TABLET)
+   ========================================= */
+
+@media (max-width: 992px) {
+    /* Navbar Menu Hamburguer */
+    .hamburger {
+        display: flex;
+    }
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: rgba(15, 23, 42, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        padding: 2rem 0;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    .nav-menu.active {
+        right: 0;
+    }
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        padding-top: 150px;
+        text-align: center;
+        gap: 2rem;
+    }
+    .hero-subtitle {
+        margin: 0 auto 2rem;
+    }
+    .hero-stats {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    /* Dashboard Mockup (Imagem do Topo) */
+    .hero-mockup {
+        width: 100%;
+    }
+    .dashboard-mockup {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        padding: 1.5rem;
+    }
+    .kpi-grid {
+        flex-direction: column;
+    }
+
+    /* Contact Section */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Textos Gerais */
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    /* Linha do Tempo (Jornada) */
+    .timeline::before {
+        left: 20px; /* Joga a linha para a esquerda */
+    }
+    .timeline-item, 
+    .timeline-item:nth-child(even) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 50px;
+        transform: translateX(0) !important; /* Remove animação de vir dos lados */
+    }
+    .timeline-item:nth-child(odd) .timeline-content, 
+    .timeline-item:nth-child(even) .timeline-content {
+        margin: 0;
+        width: 100%;
+    }
+    .timeline-dot {
+        left: 20px;
+    }
+
+    /* Projetos (Transforma o carrossel em lista no celular) */
+    .carousel-track {
+        flex-direction: column;
+        transform: none !important; /* Desativa a transição lateral no celular */
+    }
+    .project-card {
+        flex: auto;
+        width: 100%;
+    }
+    .carousel-btn {
+        display: none; /* Esconde botões do carrossel no celular */
+    }
+
+    /* Página de Detalhes */
+    .project-header-info {
+        padding: 1.5rem;
+    }
+    .project-header-info h1 {
+        font-size: 1.8rem;
+    }
+    .iframe-wrapper {
+        height: 50vh;
+        min-height: 400px;
+    }
+}
